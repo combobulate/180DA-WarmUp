@@ -9,7 +9,7 @@ def on_connect(client, userdata, flags, rc):
 
     # Subscribing in on_connect() means that if we lose the connection and
     # reconnect then subscriptions will be renewed.
-    # client.subscribe("ece180d/test")
+    client.subscribe("ece180d/besttopic")
 
 # The callback of the client when it disconnects.
 def on_disconnect(client, userdata, rc):
